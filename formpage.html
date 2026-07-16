@@ -1,0 +1,65 @@
+<html >
+<head>
+
+    <title>Register | Smart Rent Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div>
+                <h1>Smart Rent Management System</h1>
+                <p>Register your rental information.</p>
+            </div>
+
+            <nav class="main-nav">
+                <a href="homepage.html">Home</a>
+                <a href="formpage.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-page">
+        <section class="container form-layout">
+            <div class="form-intro">
+                <p class="eyebrow">Registration form</p>
+                <h2>Get started with Smart Rent</h2>
+                <p>
+                    Fill in your details below. This page can be used by tenants,
+                    landlords, or property managers who want to join the system.
+                </p>
+            </div>
+
+            <form id="registrationForm" class="register-form">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="userType">User Type</label>
+                <select id="userType" name="userType" required>
+                    <option value="">Select user type</option>
+                    <option value="tenant">Tenant</option>
+                    <option value="landlord">Landlord</option>
+                    <option value="property-manager">Property Manager</option>
+                </select>
+
+                <label for="propertyAddress">Property Address</label>
+                <input type="text" id="propertyAddress" name="propertyAddress" placeholder="Enter the property address">
+
+                <label for="message">Message / Request</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+                <button class="button form-button" type="submit">Submit Registration</button>
+                <p id="formMessage" class="form-message" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
